@@ -112,7 +112,7 @@ if __name__ == '__main__':
     vehicle_type = data.get_vehichle_type()
     gantry_o = data.get_gantry_id_o()
     gantry_d = data.get_gantry_id_d()
-    window = gui.GUI(vehicle_type, gantry_o, gantry_d)
+    window = gui.GUI(vehicle_type + [''], gantry_o + [''], gantry_d + [''])
     window.begin.config(command=check_legality)
     window.vt.check.config(command=check_order1)
     window.dto.check.config(command=check_order2)

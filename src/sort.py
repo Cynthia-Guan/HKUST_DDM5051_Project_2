@@ -11,7 +11,7 @@ def sort(data, sortlist):
     for i in range(6):
         if sortlist[i]:
             sort_columns.append(i)
-            if sortlist == 'Ascending':
+            if sortlist[i] == 'Ascending':
                 ascending.append(True)
             else:
                 ascending.append(False)
